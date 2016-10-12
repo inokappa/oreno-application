@@ -27,3 +27,7 @@ get '/main' do
   @username = session[:username]
   erb :main
 end
+
+get '/logout' do
+  redirect to('/')
+end
